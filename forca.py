@@ -63,7 +63,7 @@ def desenhar(palavra, letras_usuario, chances):
             palavra_exibida += "_ "
 
     palavra_texto = FONTE_GRANDE.render(palavra_exibida.strip(), True, PRETO)
-    tela.blit(palavra_texto, (LARGURA // 2 - palavra_texto.get_width() // 2, ALTURA // 3))
+    tela.blit(palavra_texto, (LARGURA // 2 - palavra_texto.get_width() // 8, ALTURA // 3))
 
     chances_texto = FONTE_PEQUENA.render(f"Chances restantes: {chances}", True, PRETO)
     tela.blit(chances_texto, (20, 20))
