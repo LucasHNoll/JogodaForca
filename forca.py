@@ -119,3 +119,4 @@ while executando:
         executando = False
 
 pygame.quit()
+# forca
